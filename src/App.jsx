@@ -1,6 +1,7 @@
-import { useState } from "react";
-import logo from "./images/logo.jpg";
-import "./index.css";
+import { useState } from 'react'
+import logo from './images/logo.jpg'
+import { Link } from 'react-router-dom'
+import './index.css'
 
 const App = () => {
   return (
@@ -12,14 +13,14 @@ const App = () => {
           </div>
           <div className="text-center">
             <p className="text-white text-5xl mb-4">React Hook Form</p>
-            <button className="p-3 bg-pink-500 rounded text-white">
+            <Link to="/menu" className="p-3 bg-pink-500 rounded text-white">
               ดูตัวอย่าง
-            </button>
+            </Link>
           </div>
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default App;
+export default App
